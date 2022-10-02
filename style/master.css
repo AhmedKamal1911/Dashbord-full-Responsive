@@ -931,7 +931,8 @@ input.toggle{
     border-radius: 20px;
     background-color:#ccc;
     -webkit-appearance: none;
-    transition: var(--main-transition);
+    transition: 0.8s;
+    cursor: pointer;
 }
 input.toggle:checked{
     background-color: #2f98e9;
