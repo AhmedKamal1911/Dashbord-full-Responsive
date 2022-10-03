@@ -1008,7 +1008,7 @@ input.toggle:checked[type="checkbox"]::before{
 margin-bottom: 5px;
 }
 .security-info .info .desc span{
-font-size: 14px;
+font-size: 15px;
 color: var(--gray-color);
 }
 .security-info:nth-of-type(3) .info a{
@@ -1017,4 +1017,114 @@ color: var(--gray-color);
     font-weight: 500;
 }
 /* End-Security-info */
+/* Start-Social-info */
+.social-info .info{
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+border-radius: 5px;
+overflow: hidden;
+background-color: var(--border-color);
+}
+.social-info .info img{
+width: 40px;
+margin-right: 15px;
+cursor: pointer;
+}
+.social-info .info span{
+color: var(--gray-color);
+}
+/* End-Social-info */
+/* Start-widgets-control */
+.widgets-control form .holder{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.widgets-control form input{
+    accent-color:rgb(0, 119, 255);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.widgets-control form label{
+    user-select: none;
+}
+/* End-widgets-control */
+/* Start-backup-manager */
+.backup-manager form .holder{
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+.backup-manager form{
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+.backup-manager form .holder input{
+position: relative;
+margin-right: 10px;
+-webkit-appearance: none;
+width: 25px;
+height: 25px;
+border: 2px solid var(--gray-color);
+border-radius: 50%;
+transition: var(--main-transition);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.backup-manager form .holder input::before{
+content: "";
+position: absolute;
+background-color: #1141e2;
+width: 0;
+height: 0;
+border-radius: 50%;
+transition: var(--main-transition);
+}
+.backup-manager form .holder input:checked::before{
+    height: 15px;
+    width: 15px;
+}
+.backup-manager form .holder input:checked{
+    border-color: #1141e2;
+}
+.backup-manager form .holder label{
+font-weight: 500;
+}
+.backup-manager .packages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.backup-manager .packages .pack{
+    flex-basis: calc(97% / 3);
+    padding: 15px;
+    border: 2px solid var(--gray-color);
+    border-radius: 8px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.backup-manager .packages .pack:hover{
+border-color: #1671e7;
+}
+.backup-manager .packages .pack:hover.pack i,
+.backup-manager .packages .pack:hover.pack > p{
+color: #1671e7;
+}
+.backup-manager .packages .pack i{
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+.backup-manager .packages .pack p{
+    font-weight: 600;
+    transition: var(--main-transition);
+}
+/* End-backup-manager */
 /* End-Settings-Page */
