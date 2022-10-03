@@ -1102,6 +1102,11 @@ font-weight: 500;
     align-items: center;
     text-align: center;
 }
+@media(max-width:767px){
+    .backup-manager .packages{
+        flex-direction: column;
+    }
+}
 .backup-manager .packages .pack{
     flex-basis: calc(97% / 3);
     padding: 15px;
@@ -1109,6 +1114,12 @@ font-weight: 500;
     border-radius: 8px;
     transition: var(--main-transition);
     cursor: pointer;
+}
+@media(max-width:767px){
+    .backup-manager .packages .pack{
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
 }
 .backup-manager .packages .pack:hover{
 border-color: #1671e7;
