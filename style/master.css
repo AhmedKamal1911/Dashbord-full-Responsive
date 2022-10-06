@@ -1141,18 +1141,34 @@ color: #1671e7;
 /* End-Settings-Page */
 /* Start-Profile-page */
 .profile-page{
-    margin: 0px 20px;
+    margin: 20px;
     border-radius: 10px;
-    padding: 20px 0;
     background-color: var(--bg-white);
 }
 .profile-page .overview{
     display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+@media(max-width:767px){
+    .profile-page .overview{
+        flex-direction: column;
+    }
 }
 .profile-page .overview .profile{
-    border-right: 1px solid var(--gray-color);
-    width: 300px;
+    min-width: 300px;
     text-align: center;
+    padding: 20px;
+}
+@media(max-width:767px){
+    .profile-page .overview .profile{
+        min-width: 100%;
+    }
+}
+@media(min-width:768px){
+    .profile-page .overview .profile{
+        border-right: 1px solid var(--gray-color);
+    }
 }
 .profile-page .overview .profile > img{
 width: 120px;
@@ -1163,6 +1179,24 @@ margin-bottom: 10px;
 .profile-page .overview .profile> span{
     display: inline-block;
     margin-top: 10px;
+    color: var(--gray-color);
+}
+.profile-page .overview .profile .progress{
+    margin: 15px auto 0;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    height: 6px;
+    width: 70%;
+    background-color: var(--gray-color);
+}
+.profile-page .overview .profile .progress > span{
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    border-radius: 6px;
+    height: 100%;
+    left: 0;
 }
 .profile-page .overview .profile .rating{
     margin: 10px 0;
@@ -1170,7 +1204,11 @@ margin-bottom: 10px;
 .profile-page .overview .profile .rating i{
     color: orange;
 }
-.profile-page .overview .info{
-    flex: 1;
+.profile-page .overview .profile >p{
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.profile-page .overview .info-box{
+
 }
 /* End-Profile-page */
