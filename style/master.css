@@ -899,6 +899,7 @@ margin: 0 auto 0 0;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
     gap: 20px;
+    padding: 15px 0;
     margin-left: 20px;
     margin-right: 20px;
 }
