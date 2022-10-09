@@ -1558,9 +1558,6 @@ position: absolute;
 left: 20px;
 top: 20px;
 }
-.course .img{
-
-}
 .course .img img{
 width: 100%;
 }
@@ -1614,3 +1611,106 @@ color: var(--gray-color);
   background-color: var(--main-color);
 }
 /* End-Courses-page */
+/* Start-Friends-page */
+.friends-page{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 20px;
+  margin: 20px;
+}
+@media(max-width:767px){
+  .friends-page{
+    display: grid;
+    grid-template-columns: minmax(200px,1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.friends-page .friends{
+  background-color: var(--bg-white);
+  border-radius: 6px;
+  padding: 15px;
+  position: relative;
+}
+.friends-page .icons{
+  position: absolute;
+  display: flex;
+  top: 15px;
+  left: 15px;
+}
+.friends-page .friends .icons .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: var(--border-color);
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.friends-page .friends .icons .icon:nth-child(1){
+  margin-left: 0;
+}
+.friends-page .friends .icons .icon i{
+  font-size: 13px;
+}
+.friends-page .friends .friend-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+.friends-page .friends .friend-content .img img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.friends-page .friends .friend-content h3{
+  margin: 5px;
+  font-size: 18px;
+}
+.friends-page .friends .friend-content span{
+  font-size: 15px;
+  color: var(--gray-color);
+}
+.friends-page .friends .friends-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+.friends-page .friends .stats-content .stats:not(:nth-of-type(3)){
+  margin-bottom: 10px;
+}
+.friends-page .friends .stats-content .stats i{
+margin-right: 8px;
+}
+.friends-page .friends .friends-stats  > img{
+  width: 80px;
+  height: 80px;
+  opacity: 0.3;
+  }
+.friends-page .friends .orders{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.friends-page .friends .orders span{
+font-size: 14px;
+color: var(--gray-color);
+}
+.friends-page .orders a{
+  padding: 3px 8px;
+  margin: 0;
+}
+.friends-page .orders a:nth-child(2){
+background-color:#1671e7;
+}
+/* End-Friends-page */
