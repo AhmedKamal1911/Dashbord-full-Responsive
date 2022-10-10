@@ -1877,3 +1877,95 @@ transition: var(--main-transition);
   color: var(--gray-color);
 }
 /* End-Files-Page */
+/* Start-Plans-Page */
+.plans-page{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+  gap: 20px;
+  margin: 20px;
+}
+@media(max-width:767px){
+  .plans-page{
+  grid-template-columns:minmax(200px,1fr);
+  }
+}
+.plans-page .plan{
+  background-color: var(--bg-white);
+  border-radius: 6px;
+  padding: 10px;
+}
+.plans-page .plan .plan-head{
+  padding: 20px;
+  border: 3px solid var(--bg-white);
+  text-align: center;
+  color: var(--bg-white);
+}
+.plans-page .plan .plan-head .price{
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  font-size: 40px;
+}
+.plans-page .plan .plan-head .price span{
+  position: absolute;
+  left: -18px;
+  font-size: 26px;
+}
+.plans-page .plan .plan-head.green{
+  background-color: rgb(8, 196, 8);
+  outline: 3px solid rgb(4, 190, 4);
+}
+.plans-page .plan .plan-head.blue{
+  background-color: #2f6fe6;
+  outline: 3px solid #2f6fe6;
+}
+.plans-page .plan .plan-head.orange{
+  background-color: rgb(255, 187, 0);
+  outline: 3px solid rgb(255, 187, 0);
+}
+.plans-page .plan ul{
+  margin: 15px 0;
+}
+.plans-page .plan ul li{
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+@media(max-width:767px){
+  .plans-page .plan ul li{
+    font-size: 15px;
+  }
+}
+.plans-page .plan ul li i:first-child{
+  margin-right: 10px;
+}
+.plans-page .plan ul li i:last-child{
+  margin-left: auto;
+  color: var(--gray-color);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.plans-page .plan ul li i:last-child:hover{
+  color: rgb(245, 9, 9);
+}
+.plans-page .plan ul li i.green{
+  color: rgb(14, 197, 39);
+}
+.plans-page .plan ul li i.red{
+  color: rgb(240, 21, 21);
+}
+.plans-page .plan>a.link{
+  margin: 0;
+}
+.plans-page .plan>a.link.green{
+background-color: rgb(8, 196, 8);
+}
+.plans-page .plan>a.link.blue{
+background-color: #2f6fe6;
+}
+.plans-page .plan>p{
+  text-align: center;
+  color: var(--gray-color);
+}
+/* End-Plans-Page */
