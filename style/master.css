@@ -917,6 +917,11 @@ textarea {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+@media(max-width:767px){
+  .control .web-controller{
+    flex-direction: column;
+  }
+}
 .control .web-controller .info p {
   margin-bottom: 5px;
 }
